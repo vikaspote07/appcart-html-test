@@ -647,6 +647,21 @@ h2 {
 
 } 
 
+@media (max-width: 767px) {
+  .image-container {
+    max-width: 767px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
 /* hover */
 
 .features-box {
