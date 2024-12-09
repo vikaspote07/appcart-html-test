@@ -1,0 +1,669 @@
+/*  */
+
+* {
+
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+ 
+  .banner-section{
+    margin-top: 75px;
+  }
+ /* Responsive Typography */
+  h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+/* responsive  */
+@media (max-width: 767px) {
+  /* Root-level Responsive Adjustments */
+  body {
+    position: relative;
+    
+    width: 100vw;
+    min-width: 320px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  
+ 
+ header,nav .about-container,
+  .banner-section,
+  .image-container,
+  .content-container {
+    
+    max-width: 767px;
+    display: flex;
+
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    gap: 15px;
+  }
+}
+
+/* header */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav{
+    background-color: #ffffff;
+}
+
+@media screen {
+    
+}
+
+/* banner section */
+
+
+/* Banner Section Styles */
+.banner-section {
+  background: #f1f1f1;
+  padding: 60px 0;
+}
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-section {
+  max-width: 50%;
+}
+.text-section h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.text-section h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.app-links-list {
+  display: flex;
+  gap: 10px;
+}
+.app-links-list img {
+  width: 150px;
+}
+.image-section img {
+  max-width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  /* Banner Section */
+  .banner-content {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-section {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .text-section h1 {
+    font-size: 30px;
+  }
+  .text-section h4 {
+    font-size: 16px;
+  }
+  .app-links-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .app-links-list img {
+    width: 130px;
+  }
+}
+
+/* about section */
+
+.about-container-l {
+  position: relative;
+  width: 100%;
+  background-color: red;
+  /* padding: 50px 20px; */
+}
+
+.service-item-l{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-contain-l {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.services-container-l {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  z-index: 1;
+  
+}
+
+.service-item-l {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  width: 30%; /* For desktop */
+  text-align: center;
+}
+
+.service-item-l img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+/* Mobile Design */
+@media (max-width: 767px) {
+  .services-container-l {
+    
+    position: relative; /* Switch to relative */
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+.about-container-l {
+  background-color: transparent;
+}
+.content-contain-l{
+background-color: red;
+padding: 10px;
+}
+  .service-item-l {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+
+}
+
+/* Desktop Design */
+@media (min-width: 768px) {
+  .services-container-l {
+    position: relative;
+
+
+}
+
+}
+.content-contain-l {
+  width: 100%;
+  padding: 50px 20px; 
+  background-color: red ;  
+  text-align: center;
+}
+
+.content-contain-l h1 {
+  font-family: 'Oswald', sans-serif; 
+  font-size: 2.5rem;
+  color:#fff; 
+  margin-bottom: 20px;
+}
+
+.content-contain-l p {
+  font-family: 'Nunito', sans-serif; /* Clean and readable font */
+  font-size: 1.2rem; /* Slightly larger font for better readability */
+  color:#fff; /* Medium gray for the paragraph text */
+  line-height: 1.8; /* Improve text readability */
+  max-width: 800px; /* Limit width for better layout */
+  margin: 0 auto; /* Center the paragraph */
+  text-align: justify; /* Align text for a professional look */
+  text-align-last: center; /* Center last line for better aesthetics */
+}
+
+
+
+
+/* features section*/
+
+
+
+@media (min-width: 990px) {
+  .features-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px; 
+  }
+
+  .features-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+} 
+  
+@media (max-width: 780px) {
+  .features-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; 
+   } 
+   .features-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  } 
+} 
+
+
+
+/* Section */
+.features-section {
+  top: 150px;
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  margin-top: 165px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.features-section .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.features-section .section-description {
+  font-size: 1.125rem;
+  color: #777;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+.feature-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+/* Cards Container */
+.package-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Card */
+.feature-card {
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 80%;
+  max-width: 350px;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-card .feature-text:hover > * {
+  color: red;
+}
+
+/* Icon */
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+.package-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+  gap: 20px; /* Adjust space between columns */
+}
+
+@media (max-width: 768px) {
+  .package-cards-container {
+    grid-template-columns: 1fr; /* One column on smaller screens */
+  }
+}
+
+.feature-icon {
+  background-size: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Text */
+.feature-text p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
+
+
+.page-section {
+  padding: 60px 0;
+}
+
+
+/* subscription  section*/
+
+.subscription-container {
+  background: #f8f9fa;
+}
+.page-section {
+    width: 100%;
+    padding: 20px 15px;
+    background-image: url("./asset/subscription-bg\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page-section.contact-container {
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+}
+
+  .page-section > * {
+    color: #fff;
+    max-width: 100%;
+    text-align: center;
+  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subscription-points ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.subscription-points ul li {
+  padding: 5px 0;
+}
+
+.subscription-points ul li:before {
+  content: "✔";
+  margin-right: 10px;
+  color: green;
+}
+
+/* Styling for the subscription form */
+.form-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs for subscription plans */
+.form-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.form-tabs li {
+  width: 30%;
+}
+
+.form-tabs .custom-control-label {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-tabs .custom-control-input:checked + .custom-control-label {
+  background-color: #3498db;
+  color: white;
+}
+
+.form-tabs .custom-control-label img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.form-tabs .text-center {
+  margin-top: 10px;
+}
+
+.form-tabs h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.form-tabs p {
+  font-size: 1rem;
+}
+
+/* Form field styles */
+.form-fields .form-group {
+  margin-bottom: 15px;
+}
+
+.form-fields input,
+.form-fields select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-fields .input-group-text {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  height: 100%;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+/* Styling for the submit button */
+.form-submit {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-submit button {
+  background-color: #3498db;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-submit button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+  .form-tabs {
+    flex-direction: column;
+  }
+
+  .form-tabs li {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .form-fields .row {
+    flex-direction: column;
+  }
+
+  .form-fields .col-lg-6,
+  .form-fields .col-md-6 {
+    width: 100%;
+  }
+
+  .form-fields .input-group-text {
+    left: 0;
+  }
+}
+
+
+/* contact section */
+ @media(min-width:887px){
+  .image-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  background-color: #ffff;
+  max-height: 300px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.image-container > * {
+}
+.contact-image {
+  height: 280px;
+}
+
+.contacts {
+  padding: 20px;
+  margin: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background-color: aliceblue;
+  padding: 40px;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+} 
+
+/* hover */
+
+.features-box {
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.features-box:hover {
+  background-color: #f0f0f0; /* Change background on hover */
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+/* Target image on hover */
+.features-box:hover .feature-img img {
+  transform: scale(1.2); /* Zoom the image slightly */
+  filter: brightness(1.2); /* Make the image slightly brighter */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
+}
+
+/* Change text on hover */
+.features-box:hover .feature-content {
+  color: red; /* Change text color */
+  font-weight: bold; /* Make text bold */
+  transition: color 0.3s ease; /* Smooth color change */
+}
+
+.features-box:hover {
+  cursor: pointer;
+}
+
+/* hover form icons */
+.b:hover{
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
