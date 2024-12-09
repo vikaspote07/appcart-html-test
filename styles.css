@@ -92,13 +92,36 @@ nav{
     background-color: #ffffff;
 }
 
-@media screen {
-    
-}
+
 
 /* banner section */
 
+/* nav bar hover effect */
+.nav-item.hover-effect a {
+  position: relative;
+  color: inherit; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
+.nav-item.hover-effect a:hover {
+  color: red; 
+}
+
+.nav-item.hover-effect a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; 
+  left: 0;
+  width: 0;
+  height: 2px; 
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+.nav-item.hover-effect a:hover::after {
+  width: 100%; 
+}
 /* Banner Section Styles */
 .banner-section {
   background: #f1f1f1;
