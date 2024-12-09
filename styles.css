@@ -290,14 +290,14 @@ padding: 10px;
 }
 
 .content-contain-l p {
-  font-family: 'Nunito', sans-serif; /* Clean and readable font */
-  font-size: 1.2rem; /* Slightly larger font for better readability */
-  color:#fff; /* Medium gray for the paragraph text */
-  line-height: 1.8; /* Improve text readability */
-  max-width: 800px; /* Limit width for better layout */
-  margin: 0 auto; /* Center the paragraph */
-  text-align: justify; /* Align text for a professional look */
-  text-align-last: center; /* Center last line for better aesthetics */
+  font-family: 'Nunito', sans-serif; 
+  font-size: 1.2rem;
+  color:#fff; 
+  line-height: 1.8; 
+  max-width: 800px; 
+  margin: 0 auto; 
+  text-align: justify; 
+  text-align-last: center;
 }
 
 
@@ -410,13 +410,13 @@ padding: 10px;
 }
 .package-cards-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
-  gap: 20px; /* Adjust space between columns */
+  grid-template-columns: 1fr 1fr; /
+  gap: 20px; 
 }
 
 @media (max-width: 768px) {
   .package-cards-container {
-    grid-template-columns: 1fr; /* One column on smaller screens */
+    grid-template-columns: 1fr;
   }
 }
 
@@ -671,23 +671,23 @@ h2 {
 }
 
 .features-box:hover {
-  background-color: #f0f0f0; /* Change background on hover */
+  background-color: #f0f0f0; 
   cursor: pointer;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
 }
 
 /* Target image on hover */
 .features-box:hover .feature-img img {
-  transform: scale(1.2); /* Zoom the image slightly */
-  filter: brightness(1.2); /* Make the image slightly brighter */
-  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
+  transform: scale(1.2); 
+  filter: brightness(1.2); 
+  transition: transform 0.3s ease, filter 0.3s ease; 
 }
 
 /* Change text on hover */
 .features-box:hover .feature-content {
-  color: red; /* Change text color */
-  font-weight: bold; /* Make text bold */
-  transition: color 0.3s ease; /* Smooth color change */
+  color: red; 
+  font-weight: bold; 
+  transition: color 0.3s ease; 
 }
 
 .features-box:hover {
