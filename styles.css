@@ -1,4 +1,4 @@
-/*  */
+/* Global style */
 
 * {
 
@@ -26,6 +26,12 @@ html, body {
   .banner-section{
     margin-top: 75px;
   }
+
+
+  section{
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
  /* Responsive Typography */
   h1 {
     font-size: 24px;
@@ -49,7 +55,7 @@ html, body {
 
 /* responsive  */
 @media (max-width: 767px) {
-  /* Root-level Responsive Adjustments */
+ 
   body {
     position: relative;
     
@@ -242,7 +248,7 @@ nav{
 @media (max-width: 767px) {
   .services-container-l {
     
-    position: relative; /* Switch to relative */
+    position: relative; 
     top: 0;
     display: flex;
     flex-direction: column;
@@ -300,12 +306,7 @@ padding: 10px;
   text-align-last: center;
 }
 
-
-
-
 /* features section*/
-
-
 
 @media (min-width: 990px) {
   .features-container {
@@ -338,9 +339,6 @@ padding: 10px;
   } 
 } 
 
-
-
-/* Section */
 .features-section {
   top: 150px;
   padding: 60px 0;
@@ -448,6 +446,9 @@ padding: 10px;
     width: 100%;
     padding: 20px 15px;
     background-image: url("./asset/subscription-bg\ \(1\).jpg");
+     background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -611,6 +612,50 @@ h2 {
   }
 }
 
+/* hover */
+
+.features-box {
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.features-box:hover {
+  background-color: #f0f0f0; 
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+/* Target image on hover */
+.features-box:hover .feature-img img {
+  transform: scale(1.2); 
+  filter: brightness(1.2); 
+  transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+/* Change text on hover */
+.features-box:hover .feature-content {
+  color: red; 
+  font-weight: bold; 
+  transition: color 0.3s ease; 
+}
+
+.features-box:hover {
+  cursor: pointer;
+}
+
+/* hover form icons */
+.b:hover{
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 
 /* contact section */
  @media(min-width:887px){
@@ -661,47 +706,4 @@ h2 {
     justify-content: center;
     margin-bottom: 20px;
   }
-}
-/* hover */
-
-.features-box {
-  transition: all 0.3s ease-in-out;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.features-box:hover {
-  background-color: #f0f0f0; 
-  cursor: pointer;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
-}
-
-/* Target image on hover */
-.features-box:hover .feature-img img {
-  transform: scale(1.2); 
-  filter: brightness(1.2); 
-  transition: transform 0.3s ease, filter 0.3s ease; 
-}
-
-/* Change text on hover */
-.features-box:hover .feature-content {
-  color: red; 
-  font-weight: bold; 
-  transition: color 0.3s ease; 
-}
-
-.features-box:hover {
-  cursor: pointer;
-}
-
-/* hover form icons */
-.b:hover{
-  background-color: red;
-  border: none;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
 }
