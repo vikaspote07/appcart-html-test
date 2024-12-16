@@ -27,7 +27,10 @@ html, body {
     margin-top: 75px;
   }
 
-
+body{
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
   section{
     display: grid;
     grid-template-rows: 1fr auto;
