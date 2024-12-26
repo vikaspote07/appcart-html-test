@@ -489,6 +489,13 @@ h2 {
 .subscription-points ul li {
   padding: 5px 0;
 }
+.subscription-features{
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  list-style: none; 
+  padding: 0; 
+}
 
 .subscription-points ul li:before {
   content: "✔";
